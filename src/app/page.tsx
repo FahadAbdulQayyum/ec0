@@ -6,6 +6,7 @@ import React from 'react'
 import Featured from '@/components/Featured'
 import GearUp from '@/components/Gearup'
 import DontMiss from '@/components/DontMiss'
+import Essential from '@/components/Essential'
 
 const page = () => {
   return (
@@ -17,6 +18,7 @@ const page = () => {
       <Featured />
       <GearUp />
       <DontMiss />
+      <Essential />
     </div>
   )
 }
