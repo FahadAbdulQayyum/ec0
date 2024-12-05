@@ -4,6 +4,7 @@ import Hero from '@/components/Hero'
 import NikeApp from '@/components/NikeApp'
 import React from 'react'
 import Featured from '@/components/Featured'
+import GearUp from '@/components/Gearup'
 
 const page = () => {
   return (
@@ -13,6 +14,7 @@ const page = () => {
       <FirstLook />
       <FlashSale />
       <Featured />
+      <GearUp />
     </div>
   )
 }
