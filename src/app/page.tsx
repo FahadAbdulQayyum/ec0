@@ -3,6 +3,7 @@ import FirstLook from '@/components/FirstLook'
 import Hero from '@/components/Hero'
 import NikeApp from '@/components/NikeApp'
 import React from 'react'
+import Featured from '@/components/Featured'
 
 const page = () => {
   return (
@@ -11,6 +12,7 @@ const page = () => {
       <Hero />
       <FirstLook />
       <FlashSale />
+      <Featured />
     </div>
   )
 }
