@@ -13,6 +13,9 @@ const config: Config = {
         secondaryy: "#000000",
         tertiary: "#DB4444",
         },
+        spacing: {
+          standardSize: '50px',
+      },
       backgroundImage: {
         "gradient-radial": "radial-gradient(var(--tw-gradient-stops))",
         "gradient-conic":
