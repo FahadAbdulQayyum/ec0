@@ -1,4 +1,5 @@
 import Navbar from '@/components/Navbar'
+import NikeApp from '@/components/NikeApp'
 import UpperBanner from '@/components/UpperBanner'
 import React from 'react'
 
@@ -7,6 +8,7 @@ const page = () => {
     <div>
       <UpperBanner />
       <Navbar />
+      <NikeApp />
     </div>
   )
 }
