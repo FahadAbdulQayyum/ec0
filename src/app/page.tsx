@@ -1,3 +1,4 @@
+import FlashSale from '@/components/FlashSale'
 import FirstLook from '@/components/FirstLook'
 import Hero from '@/components/Hero'
 import NikeApp from '@/components/NikeApp'
@@ -9,6 +10,7 @@ const page = () => {
       <NikeApp />
       <Hero />
       <FirstLook />
+      <FlashSale />
     </div>
   )
 }
