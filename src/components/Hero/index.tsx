@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Hero: React.FC = () => {
     return (
-        <div className="relative h-screen mx-auto overflow-hidden">
+        <div className="relative h-screen overflow-hidden mx-standardSize">
             {/* The hero image will cover the full container */}
             <Image
                 src="/assets/hero-image.svg"

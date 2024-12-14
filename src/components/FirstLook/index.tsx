@@ -2,14 +2,14 @@ import React from 'react'
 
 const FirstLook = () => {
     return (
-        <div className="flex flex-col justify-center items-center space-y-4 px-4">
+        <div className="flex flex-col justify-center items-center space-y-4 px-4 py-standardSize">
             <div>
                 <p className="text-sm font-bold">First Look</p>
             </div>
             <div>
                 <h1 className="text-3xl md:text-4xl font-bold uppercase text-center">Nike Air Max Pulse</h1>
             </div>
-            <div className="space-y-2 py-5">
+            <div className="space-y-2 py-5 font-medium">
                 <p className="text-sm text-center">
                     Extreme comfort. Hyper durable. Max volume. Introducing the Air Max Pulse
                 </p>
