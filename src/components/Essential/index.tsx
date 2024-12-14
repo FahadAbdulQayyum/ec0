@@ -22,19 +22,19 @@ const Essential = () => {
                         {
                             icon: "/assets/essential-1.svg",
                             title: "Nike Air Max Pulse",
-                            category: "Men&apos;s",
+                            category: "Men's",
                             price: "13 995",
                         },
                         {
                             icon: "/assets/essential-2.svg",
                             title: "Nike Air Max Pulse",
-                            category: "Women&apos;s",
+                            category: "Women's",
                             price: "13 995",
                         },
                         {
                             icon: "/assets/essential-3.svg",
                             title: "Nike Air Max Pulse",
-                            category: "Kids&apos;",
+                            category: "Kids'",
                             price: "13 995",
                         },
                     ]}
