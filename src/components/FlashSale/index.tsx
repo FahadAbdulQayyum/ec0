@@ -5,30 +5,35 @@ import { CarouselImage } from '../Carousel';
 const FlashSale = () => {
     const products = [
         {
+            id: 0,
             image: '/assets/best-nike-1.svg',
             title: 'Nike Air Max Pulse',
             category: "Women's Shoes",
             price: '13 995',
         },
         {
+            id: 1,
             image: '/assets/best-nike-2.svg',
             title: 'Nike Air Max Pulse',
             category: "Women's Shoes",
             price: '13 995',
         },
         {
+            id: 2,
             image: '/assets/best-nike-3.svg',
             title: 'Nike Air Max Pulse',
             category: "Women's Shoes",
             price: '13 995',
         },
         {
+            id: 3,
             image: '/assets/best-nike-3.svg',
             title: 'Nike Air Max Pulse',
             category: "Women's Shoes",
             price: '13 995',
         },
         {
+            id: 4,
             image: '/assets/best-nike-3.svg',
             title: 'Nike Air Max Pulse',
             category: "Women's Shoes",
@@ -37,7 +42,7 @@ const FlashSale = () => {
     ];
 
     return (
-        <div className="p-4 md:p-8 lg:p-standardSize flex flex-col justify-center space-y-6">
+        <div className="p-4 md:p-standardSize flex flex-col justify-center space-y-6">
             {/* Section Header */}
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
                 {/* <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-sans"> */}
@@ -53,11 +58,11 @@ const FlashSale = () => {
             </div>
 
             {/* Optional Button */}
-            <span className="text-center">
+            {/* <span className="text-center">
                 <button className="bg-tertiary p-4 text-white rounded hover:bg-tertiary-dark transition-all">
                     View All Products
                 </button>
-            </span>
+            </span> */}
         </div>
     );
 };

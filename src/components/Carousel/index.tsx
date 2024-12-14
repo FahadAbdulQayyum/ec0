@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 // import { useRouter } from 'next/router';
+import { useRouter } from 'next/navigation';
 
 import { Card, CardContent } from "@/components/ui/card";
 import {
@@ -57,6 +58,14 @@ export function CarouselImage({ flash, essential, data }: CarouselImageProps) {
         });
     }, [api]);
 
+    const router = useRouter();
+
+    const sendData = (product: any) => {
+        console.log('products...', product)
+        const queryString = encodeURIComponent(JSON.stringify(product));
+        router.push(`/Products/${product.id}?data=${queryString}`);
+    }
+
     return (
         <Carousel setApi={setApi}>
             <CarouselContent>
@@ -103,7 +112,7 @@ export function CarouselImage({ flash, essential, data }: CarouselImageProps) {
                             className="pl-1 md:basis-1/2 lg:basis-1/3 rounded-none"
                         >
                             <div className="flex justify-center items-center">
-                                <CardContent className="flex flex-col items-center justify-center text-black space-y-4">
+                                <CardContent className="flex flex-col items-center justify-center text-black space-y-4" onClick={() => sendData(item)}>
                                     <div className="bg-primaryy h-68 flex items-center justify-center relative group w-full md:max-w-sm">
                                         <Image
                                             src={item.image || "/assets/best-nike-2.svg"}

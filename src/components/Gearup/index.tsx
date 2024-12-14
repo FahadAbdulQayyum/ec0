@@ -10,18 +10,35 @@ const GearUp = () => {
                 {/* <h1 className="text-3xl md:text-4xl font-bold font-sans">Gear Up</h1> */}
                 <h1 className="text-xl font-medium font-sans text-left w-full">Gear Up</h1>
                 {/* Buttons */}
-                <div className="flex flex-col sm:flex-row w-full justify-center space-y-4 sm:space-y-0 sm:space-x-4">
-                    <button className="w-full sm:w-1/2 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                        Shop Men
-                    </button>
-                    <button className="w-full sm:w-1/2 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">
-                        Shop Women
-                    </button>
+                <div
+                    className="flex flex-col sm:flex-row w-full justify-center space-y-4 sm:space-y-0 sm:space-x-4"
+                // className="flex flex-col sm:flex-row w-[8%] justify-center space-y-4 sm:space-y-0 sm:space-x-4 text-right"
+                >
+                    <span
+                        // className="w-[20%] sm:w-1/2 py-2 bg-gray-300 text-black rounded-full hover:bg-gray-600"
+                        className="w-full sm:w-1/2 py-2 text-black"
+                    >
+                        <button
+                            className="text-center bg-gray-300 hover:bg-gray-600"
+                        >
+                            {'>'}
+                        </button>
+                    </span>
+                    <span
+                        className="w-full sm:w-1/2 py-2 text-black"
+                    // className="w-[20%] sm:w-1/2 py-2 bg-gray-300 text-black rounded-full hover:bg-gray-600"
+                    >
+                        <button
+                            className="text-center bg-gray-300 hover:bg-gray-600"
+                        >
+                            {'>'}
+                        </button>
+                    </span>
                 </div>
-            </section>
+            </section >
 
             {/* Section for Carousel Images */}
-            <section className="grid grid-cols-1 md:grid-cols-2 gap-6">
+            < section className="grid grid-cols-1 md:grid-cols-2 gap-6" >
                 <CarouselImage
                     flash={true}
                     data={[
@@ -92,8 +109,8 @@ const GearUp = () => {
                         },
                     ]}
                 />
-            </section>
-        </div>
+            </section >
+        </div >
     );
 };
 

@@ -3,7 +3,7 @@ import Image from "next/image";
 
 const Featured: React.FC = () => {
     return (
-        <div className="px-standardSize">
+        <div className="p-standardSize">
             {/* <h1 className="font-bold text-xl mb-5">Featured</h1> */}
             <h1 className="text-xl font-medium font-sans mb-4">Featured</h1>
             <div className="relative h-screen">
@@ -15,7 +15,7 @@ const Featured: React.FC = () => {
                     priority // Ensures the hero image is loaded quickly
                 />
             </div>
-            <div className="flex flex-col items-center space-y-3 pt-6">
+            <div className="flex flex-col items-center space-y-5 pt-10">
                 <h1 className="text-4xl md:text-5xl font-bold text-center">
                     STEP INTO WHAT FEELS GOOD
                 </h1>
