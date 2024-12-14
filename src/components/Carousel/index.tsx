@@ -132,9 +132,12 @@ export function CarouselImage({ flash, essential, data }: CarouselImageProps) {
                         >
                             <div className="flex justify-center items-center group">
                                 <CardContent className="flex items-center justify-center text-black bg-transparent">
-                                    <div className="relative h-80 w-full max-w-xs md:max-w-md">
+                                    <div
+                                        // className="relative h-80 w-full max-w-xs md:max-w-md"
+                                        className="relative h-80 w-72"
+                                    >
                                         <Image
-                                            src={item.icon || "/assets/best-nike-1.svg"}
+                                            src={item.icon || "/assets/essential-1.svg"}
                                             alt={item.title || "alt"}
                                             layout="fill"
                                             objectFit="cover"
@@ -148,10 +151,11 @@ export function CarouselImage({ flash, essential, data }: CarouselImageProps) {
                             </div>
                         </CarouselItem>
                     ))
-                )}
-            </CarouselContent>
+                )
+                }
+            </CarouselContent >
             <CarouselPrevious />
             <CarouselNext />
-        </Carousel>
+        </Carousel >
     );
 }

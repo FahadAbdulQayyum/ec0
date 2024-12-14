@@ -12,7 +12,9 @@ const Essential = () => {
             </span>
 
             {/* Carousel Section */}
-            <span className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-4 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400">
+            <span
+            // className="flex flex-col md:flex-row space-y-6 md:space-y-0 md:space-x-4 overflow-x-auto scrollbar-thin scrollbar-thumb-gray-400"
+            >
                 <CarouselImage
                     flash={true}
                     essential={true}
