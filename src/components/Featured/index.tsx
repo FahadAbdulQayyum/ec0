@@ -5,7 +5,7 @@ const Featured: React.FC = () => {
     return (
         <div className="px-standardSize">
             {/* <h1 className="font-bold text-xl mb-5">Featured</h1> */}
-            <h1 className="text-xl font-medium font-sans">Featured</h1>
+            <h1 className="text-xl font-medium font-sans mb-4">Featured</h1>
             <div className="relative h-screen">
                 <Image
                     src="/assets/featured.svg"
