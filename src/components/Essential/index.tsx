@@ -42,11 +42,11 @@ const Essential = () => {
             </span>
 
             {/* Optional Button */}
-            <span className="text-center">
+            {/* <span className="text-center">
                 <button className="bg-tertiary p-4 text-white rounded hover:bg-tertiary-dark transition-all">
                     View All Products
                 </button>
-            </span>
+            </span> */}
         </div>
     );
 };

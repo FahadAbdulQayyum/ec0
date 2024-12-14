@@ -16,20 +16,22 @@ const GearUp = () => {
                 >
                     <span
                         // className="w-[20%] sm:w-1/2 py-2 bg-gray-300 text-black rounded-full hover:bg-gray-600"
-                        className="w-full sm:w-1/2 py-2 text-black"
+                        className="flex items-center justify-end font-medium space-x-16 w-full sm:w-1/2 py-2 text-black text-right"
                     >
+                        <p>Shop Men&apos;s</p>
                         <button
-                            className="text-center bg-gray-300 hover:bg-gray-600"
+                            className="bg-gray-300 hover:bg-gray-600 px-4 p-2 rounded-full"
                         >
                             {'>'}
                         </button>
                     </span>
                     <span
-                        className="w-full sm:w-1/2 py-2 text-black"
+                        className="flex items-center justify-end font-medium space-x-16 w-full sm:w-1/2 py-2 text-black text-right"
                     // className="w-[20%] sm:w-1/2 py-2 bg-gray-300 text-black rounded-full hover:bg-gray-600"
                     >
+                        <p>Shop Women&apos;s</p>
                         <button
-                            className="text-center bg-gray-300 hover:bg-gray-600"
+                            className="bg-gray-300 hover:bg-gray-600 px-4 p-2 rounded-full"
                         >
                             {'>'}
                         </button>
