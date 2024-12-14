@@ -6,7 +6,7 @@ const Essential = () => {
         <div className="p-4 md:p-8 lg:p-standardSize flex flex-col justify-center space-y-6">
             {/* Section Header */}
             <span className="flex justify-between items-center">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-sans">
+                <h1 className="text-xl font-medium font-sans">
                     The Essentials
                 </h1>
             </span>

@@ -14,7 +14,7 @@ const FirstLook = () => {
                     Extreme comfort. Hyper durable. Max volume. Introducing the Air Max Pulse
                 </p>
                 <p className="text-sm text-center">
-                    —designed to push you past your limits and help you go to the max.
+                    — designed to push you past your limits and help you go to the max.
                 </p>
             </div>
             <div className="space-x-4">

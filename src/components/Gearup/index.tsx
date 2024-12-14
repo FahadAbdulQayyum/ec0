@@ -7,7 +7,8 @@ const GearUp = () => {
         <div className="p-standardSize flex flex-col justify-center space-y-6">
             {/* Section for Title and Buttons */}
             <section className="flex flex-col items-center space-y-6">
-                <h1 className="text-3xl md:text-4xl font-bold font-sans">Gear Up</h1>
+                {/* <h1 className="text-3xl md:text-4xl font-bold font-sans">Gear Up</h1> */}
+                <h1 className="text-xl font-medium font-sans">Gear Up</h1>
                 {/* Buttons */}
                 <div className="flex flex-col sm:flex-row w-full justify-center space-y-4 sm:space-y-0 sm:space-x-4">
                     <button className="w-full sm:w-1/2 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">

@@ -40,7 +40,8 @@ const FlashSale = () => {
         <div className="p-4 md:p-8 lg:p-standardSize flex flex-col justify-center space-y-6">
             {/* Section Header */}
             <div className="flex flex-col md:flex-row justify-between items-center space-y-4 md:space-y-0">
-                <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-sans">
+                {/* <h1 className="text-2xl md:text-3xl lg:text-4xl font-bold font-sans"> */}
+                <h1 className="text-xl font-medium font-sans">
                     Best of Air Max
                 </h1>
                 {/* <Counter /> */}
