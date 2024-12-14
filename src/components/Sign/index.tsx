@@ -1,4 +1,5 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface SignProps {
     signup: boolean;
@@ -64,9 +65,9 @@ const Sign: React.FC<SignProps> = ({ signup }) => {
             <button className="bg-black w-full max-w-md text-white py-2 rounded uppercase">{signup ? "Join Us" : "Sign in"}</button>
             <div className="flex text-sm text-gray-400">
                 <p>{signup ? "Already a Member" : "Not a Member?"}</p>
-                <span className="ml-2 border-b border-black text-black">{signup ? "Sign In." : "Join Us."}</span>
+                <Link href={signup ? '/Sign/in' : '/Sign/up'} className="ml-2 border-b border-black text-black">{signup ? "Sign In." : "Join Us."}</Link>
             </div>
-        </div>
+        </div >
     );
 };
 
