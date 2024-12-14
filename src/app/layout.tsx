@@ -1,5 +1,5 @@
 // import { Poppins, Roboto, Inter } from "next/font/google";
-import { Poppins } from "next/font/google";
+import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
 import UpperBanner from "@/components/UpperBanner";
@@ -7,14 +7,15 @@ import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
 // const myInter = Inter({
-//   subsets: ["latin"],
-//   weight: ["100", "300", "700"],
-// });
-
-const myfont = Poppins({
+const myfont = Inter({
   subsets: ["latin"],
   weight: ["100", "300", "700"],
 });
+
+// const myfont = Poppins({
+//   subsets: ["latin"],
+//   weight: ["100", "300", "700"],
+// });
 
 // const robotoFont = Roboto({
 //   subsets: ["latin"],
