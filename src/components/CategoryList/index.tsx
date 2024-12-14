@@ -37,11 +37,11 @@ const CategoryList = () => {
 
             <div className="w-full md:w-1/4 flex flex-col space-y-4">
                 <ul>
-                    <h1 className="font-bold text-lg mb-4">Kids'</h1>
+                    <h1 className="font-bold text-lg mb-4">Kids&apos;</h1>
                     <li className="hover:text-gray-600">infact & Toddler Shoes</li>
-                    <li className="hover:text-gray-600">Kids' Shoes</li>
-                    <li className="hover:text-gray-600">Kids' Jordan Shoes</li>
-                    <li className="hover:text-gray-600">Kids' Basketball Shoes</li>
+                    <li className="hover:text-gray-600">Kids&apos; Shoes</li>
+                    <li className="hover:text-gray-600">Kids&apos; Jordan Shoes</li>
+                    <li className="hover:text-gray-600">Kids&apos; Basketball Shoes</li>
                 </ul>
             </div>
         </div>
