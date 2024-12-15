@@ -135,23 +135,23 @@ const CheckoutComponent = () => {
                 </div>
             </div>
             <div
-                className="flex justify-between bg-black text-white px-standardSize py-4"
+                className="flex flex-col md:flex-row justify-between bg-black text-white px-standardSize py-4"
             >
-                <div className="flex justify-center md:flex-row items-center md:space-x-5">
+                <div className="flex flex-col justify-center md:flex-row items-center md:space-x-5 py-2 md:py-0">
                     <span className="flex items-center space-x-2">
                         <IoLocationOutline />
                         <p>India</p>
                     </span>
                     <span className="text-gray-400 text-sm">© 2023 NIKE, Inc. All Rights Reserved</span>
                 </div>
-                <ul className="flex justify-center space-x-5 text-sm items-center text-gray-400">
+                <ul className="flex flex-col md:flex-row justify-center md:space-x-5 space-y-2 md:space-y-0 text-sm items-center text-gray-400">
                     <li>Terms of Use</li>
                     <li>Terms of Sale</li>
                     <li>Privacy Policy</li>
                 </ul>
                 <div></div>
                 <div>
-                    <ul className="flex justify-center space-x-1 text-sm items-center text-gray-400">
+                    <ul className="flex flex-col md:flex-row justify-center md:space-x-1 space-y-2 md:space-y-0 text-sm items-center text-gray-400 py-2 md:py-0">
                         <li>
                             <Image src={"/assets/visa.svg"} alt="visa card" width={40} height={40} />
                         </li>
