@@ -30,14 +30,14 @@ const ContactUsComponent = () => {
     return (
         <div className="flex flex-wrap p-standardSize">
             <section className="w-full sm:w-[75%] border-r flex flex-col items-center space-y-4">
-                <h1 className="uppercase font-bold text-xl">Get Help</h1>
+                <h1 className="uppercase font-bold text-lg">Get Help</h1>
                 <span className="flex justify-between border rounded p-2 w-full sm:w-[40%] text-sm items-center">
                     <input placeholder="What can we help you with?" className="w-[90%] outline-none py-1" />
                     <span className="w-[10%]">
                         <CiSearch />
                     </span>
                 </span>
-                <h1 className="font-bold text-3xl items-start w-full">WHAT PAYMENT OPTIONS CAN I USE ON NIKE ORDERS?</h1>
+                <h1 className="font-bold text-2xl items-start w-full">WHAT PAYMENT OPTIONS CAN I USE ON NIKE ORDERS?</h1>
                 <p>We want to make buying your favourite Nike shoes and gear online fast and easy, and we accept the following payment options:</p>
                 <span className="pl-2">
                     <p>Visa, Mastercard, Diners Club, Discover, American Express, Visa Electron, Maestro</p>
@@ -52,7 +52,7 @@ const ContactUsComponent = () => {
                     </span>
                 </span>
                 <span>
-                    <h1 className="font-bold text-xl py-1">FAQs</h1>
+                    <h1 className="font-bold text-lg py-1">FAQs</h1>
                     <p>Does my card need international purchases enabled?</p>
                     <p>Yes, we recommend asking your bank to enable international purchases on your card. You will be notified at checkout if international purchases need to be enabled.</p>
                     <p className="my-3">Please note, some banks may charge <span className="font-bold border-b border-black">a small transaction fee</span> for international orders.</p>
@@ -71,7 +71,7 @@ const ContactUsComponent = () => {
                 </span>
                 <span className="w-full">
                     <p>Was this answer helpful?</p>
-                    <span className="flex text-xl space-x-2">
+                    <span className="flex text-lg space-x-2">
                         <IoThumbsUpSharp />
                         <IoThumbsDownSharp />
                     </span>
