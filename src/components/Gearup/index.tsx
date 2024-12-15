@@ -45,31 +45,31 @@ const GearUp = () => {
                     flash={true}
                     data={[
                         {
-                            image: '/assets/best-nike-1.svg',
+                            image: '/assets/gearup-1.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
                         },
                         {
-                            image: '/assets/best-nike-2.svg',
+                            image: '/assets/gearup-2.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
                         },
                         {
-                            image: '/assets/best-nike-3.svg',
+                            image: '/assets/gearup-3.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
                         },
                         {
-                            image: '/assets/best-nike-3.svg',
+                            image: '/assets/gearup-4.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
                         },
                         {
-                            image: '/assets/best-nike-3.svg',
+                            image: '/assets/gearup-4.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
@@ -80,25 +80,25 @@ const GearUp = () => {
                     flash={true}
                     data={[
                         {
-                            image: '/assets/best-nike-1.svg',
+                            image: '/assets/gearup-3.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
                         },
                         {
-                            image: '/assets/best-nike-2.svg',
+                            image: '/assets/gearup-4.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
                         },
                         {
-                            image: '/assets/best-nike-3.svg',
+                            image: '/assets/gearup-2.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
                         },
                         {
-                            image: '/assets/best-nike-3.svg',
+                            image: '/assets/gearup-1.svg',
                             title: 'Nike Air Max Pulse',
                             category: "Women's Shoes",
                             price: '13 995',
