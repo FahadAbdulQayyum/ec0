@@ -19,16 +19,49 @@ type ProductType = {
 const Products = () => {
     const btns = Array(10).fill({ name: 'Best Selling Products' });
 
-    const data = Array.from({ length: 12 }).map((_, id) => ({
-        id,
-        status: 'Just In',
-        color: '1 Colour',
-        desc: 'Turn style on its head with this crafted take on the Air Jordan 1 Mid...',
-        category: "Men's shoe",
-        image: '/assets/bsp-1.svg',
-        title: 'The north coat',
-        price: '8 695.00',
-    }));
+    // const data = Array.from({ length: 12 }).map((_, id) => ({
+    //     id,
+    //     status: 'Just In',
+    //     color: '1 Colour',
+    //     desc: 'Turn style on its head with this crafted take on the Air Jordan 1 Mid...',
+    //     category: "Men's shoe",
+    //     image: '/assets/bsp-1.svg',
+    //     title: 'The north coat',
+    //     price: '8 695.00',
+    // }));
+
+    const data = [
+        {
+            id: 0,
+            status: 'Just In',
+            color: '1 Colour',
+            desc: 'Turn style on its head with this crafted take on the Air Jordan 1 Mid...',
+            category: "Men's shoe",
+            image: '/assets/product-1.svg',
+            title: "Nike Air Force 1 Mid '07",
+            price: '8 695.00',
+        },
+        {
+            id: 1,
+            status: 'Just In',
+            color: '1 Colour',
+            desc: 'Turn style on its head with this crafted take on the Air Jordan 1 Mid...',
+            category: "Men's shoe",
+            image: '/assets/product-2.svg',
+            title: 'Nike Court Vision Low Next Nature',
+            price: '4 995.00',
+        },
+        {
+            id: 2,
+            status: 'Just In',
+            color: '1 Colour',
+            desc: 'Turn style on its head with this crafted take on the Air Jordan 1 Mid...',
+            category: "Men's shoe",
+            image: '/assets/product-3.svg',
+            title: 'Nike Air Force 1 PLT.AF.ORM',
+            price: '8 695.00',
+        },
+    ];
 
     const router = useRouter();
 
