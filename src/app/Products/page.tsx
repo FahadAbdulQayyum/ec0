@@ -411,6 +411,16 @@ const Products = () => {
             title: 'Nike Air Max SYSTM',
             price: '6 495.00',
         },
+        {
+            id: 38,
+            status: 'Just In',
+            color: '3 Colour',
+            desc: 'Turn style on its head with this crafted take on the Air Jordan 1 Mid...',
+            category: "Men's Short-Sleeve Running Top",
+            image: '/assets/product-39.svg',
+            title: 'Nike Air Max SYSTM',
+            price: '6 495.00',
+        },
 
     ];
 

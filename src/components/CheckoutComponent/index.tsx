@@ -66,19 +66,30 @@ const CheckoutComponent = () => {
                 </div>
 
                 {/* Continue Button */}
-                <button className="bg-primary rounded-full p-2 w-full text-gray-600 mt-4">Continue</button>
+                <button className="rounded-full p-2 w-full bg-gray-200 text-medium text-gray-600 mt-4">Continue</button>
+
+                <div className="border-b w-full h-1 my-4"></div>
 
                 {/* Misc Sections */}
-                <div className="space-y-2 mt-8">
+                <div className="space-y-4 mt-8 pb-20">
                     <h1 className="font-bold text-xl">Delivery</h1>
-                    <h1 className="font-bold text-xl">Shipping</h1>
-                    <h1 className="font-bold text-xl">Billing</h1>
-                    <h1 className="font-bold text-xl">Payment</h1>
+
+                    <div className="border-b w-full h-1 my-4"></div>
+
+                    <h1 className="font-bold text-xl text-gray-400">Shipping</h1>
+
+                    <div className="border-b w-full h-1 my-4"></div>
+
+                    <h1 className="font-bold text-xl text-gray-400">Billing</h1>
+
+                    <div className="border-b w-full h-1 my-4"></div>
+
+                    <h1 className="font-bold text-xl text-gray-400">Payment</h1>
                 </div>
             </div>
 
             {/* Right Section: Order Summary */}
-            <div className="w-full lg:w-[30%] mt-6 lg:mt-0">
+            <div className="w-full lg:w-[40%] mt-6 lg:mt-0">
                 <h1 className="font-bold mb-4">Order Summary</h1>
                 <div className="flex w-full justify-between">
                     <p>Subtotal</p>
@@ -101,21 +112,21 @@ const CheckoutComponent = () => {
                 <div>
                     <h1 className="font-bold py-2">Arrives Mon, 27 Mar - Wed, 12 Apr</h1>
                     <div className="flex">
-                        <Image src="/assets/best-nike-2.svg" alt="nike" width={100} height={100} className="bg-primary" />
+                        <Image src="/assets/gearup-1.svg" alt="nike" width={120} height={120} className="bg-transparent" />
                         <div className="ml-2">
-                            <p>Nike Dri-FIT ADV TechKnit Ultra Men&apos;s Short-Sleeve Running Top</p>
-                            <p className="text-gray-400">Qty: 1</p>
-                            <p className="text-gray-400">Size: L</p>
-                            <p className="text-gray-400">₹ 3,895.00</p>
+                            <p className="text-sm">Nike Dri-FIT ADV TechKnit Ultra Men&apos;s Short-Sleeve Running Top</p>
+                            <p className="text-gray-400 text-sm">Qty: 1</p>
+                            <p className="text-gray-400 text-sm">Size: L</p>
+                            <p className="text-gray-400 text-sm">₹ 3,895.00</p>
                         </div>
                     </div>
                     <div className="flex mt-4">
-                        <Image src="/assets/best-nike-2.svg" alt="nike" width={100} height={100} className="bg-primary" />
+                        <Image src="/assets/best-nike-3.svg" alt="nike" width={120} height={120} className="bg-transparent" />
                         <div className="ml-2">
-                            <p>Nike Dri-FIT ADV TechKnit Ultra Men&apos;s Short-Sleeve Running Top</p>
-                            <p className="text-gray-400">Qty: 1</p>
-                            <p className="text-gray-400">Size: L</p>
-                            <p className="text-gray-400">₹ 3,895.00</p>
+                            <p className="text-sm">Nike Dri-FIT ADV TechKnit Ultra Men&apos;s Short-Sleeve Running Top</p>
+                            <p className="text-gray-400 text-sm">Qty: 1</p>
+                            <p className="text-gray-400 text-sm">Size: L</p>
+                            <p className="text-gray-400 text-sm">₹ 3,895.00</p>
                         </div>
                     </div>
                 </div>
