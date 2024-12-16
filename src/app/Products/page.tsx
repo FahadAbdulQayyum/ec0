@@ -19,17 +19,6 @@ type ProductType = {
 const Products = () => {
     const btns = Array(10).fill({ name: 'Best Selling Products' });
 
-    // const data = Array.from({ length: 12 }).map((_, id) => ({
-    //     id,
-    //     status: 'Just In',
-    //     color: '1 Colour',
-    //     desc: 'Turn style on its head with this crafted take on the Air Jordan 1 Mid...',
-    //     category: "Men's shoe",
-    //     image: '/assets/bsp-1.svg',
-    //     title: 'The north coat',
-    //     price: '8 695.00',
-    // }));
-
     const data = [
         {
             id: 0,
