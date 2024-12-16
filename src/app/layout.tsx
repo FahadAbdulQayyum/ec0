@@ -1,4 +1,5 @@
-// import { Poppins, Roboto, Inter } from "next/font/google";
+"use client"
+
 import { Inter } from "next/font/google";
 import type { Metadata } from "next";
 import "./globals.css";
@@ -28,16 +29,16 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myfont.className}>
-        {/* <Provider store={store}> */}
-        <span className="fixed top-0 left-0 right-0 z-50">
-          <UpperBanner />
-          <Navbar />
-        </span>
-        <div className="mt-24">
-          {children}
-        </div>
-        <Footer />
-        {/* </Provider> */}
+        <Provider store={store}>
+          <span className="fixed top-0 left-0 right-0 z-50">
+            <UpperBanner />
+            <Navbar />
+          </span>
+          <div className="mt-24">
+            {children}
+          </div>
+          <Footer />
+        </Provider>
       </body>
     </html>
   );
