@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 
 import { Provider } from 'react-redux';
 import { store } from './store/store';
+import Providers from "@/components/Providers";
 
 // const myInter = Inter({
 const myfont = Inter({
@@ -27,18 +28,17 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myfont.className}>
-
-        <span className="fixed top-0 left-0 right-0 z-50">
-          <UpperBanner />
-          <Navbar />
-        </span>
-        <div className="mt-24">
-          <Provider store={store}>
+        <Providers>
+          <span className="fixed top-0 left-0 right-0 z-50">
+            <UpperBanner />
+            <Navbar />
+          </span>
+          <div className="mt-24">
             {children}
-          </Provider>
-        </div>
-        <Footer />
+          </div>
+          <Footer />
+        </Providers>
       </body>
-    </html>
+    </html >
   );
 }
