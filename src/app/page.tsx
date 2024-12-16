@@ -9,18 +9,23 @@ import DontMiss from '@/components/DontMiss'
 import Essential from '@/components/Essential'
 import CategoryList from '@/components/CategoryList'
 
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+
 const page = () => {
   return (
     <div>
-      <NikeApp />
-      <Hero />
-      <FirstLook />
-      <FlashSale />
-      <Featured />
-      <GearUp />
-      <DontMiss />
-      <Essential />
-      <CategoryList />
+      <Provider store={store}>
+        <NikeApp />
+        <Hero />
+        <FirstLook />
+        <FlashSale />
+        <Featured />
+        <GearUp />
+        <DontMiss />
+        <Essential />
+        <CategoryList />
+      </Provider>
     </div>
   )
 }
