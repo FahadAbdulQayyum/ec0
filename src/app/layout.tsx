@@ -38,7 +38,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myfont.className}>
-      <Provider store={store}>
+        {/* <Provider store={store}> */}
         <span className="fixed top-0 left-0 right-0 z-50">
           <UpperBanner />
           <Navbar />
@@ -47,7 +47,7 @@ export default function RootLayout({
           {children}
         </div>
         <Footer />
-        </Provider>
+        {/* </Provider> */}
       </body>
     </html>
   );
