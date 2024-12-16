@@ -17,6 +17,7 @@ type ProductType = {
 };
 
 const Products = () => {
+
     const btns = Array(10).fill({ name: 'Best Selling Products' });
 
     const data = [
