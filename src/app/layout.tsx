@@ -5,8 +5,6 @@ import UpperBanner from "@/components/UpperBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-import { Provider } from 'react-redux';
-import { store } from './store/store';
 import Providers from "@/components/Providers";
 
 // const myInter = Inter({
