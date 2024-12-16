@@ -5,6 +5,9 @@ import UpperBanner from "@/components/UpperBanner";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
+import { Provider } from 'react-redux';
+import { store } from './store/store';
+
 // const myInter = Inter({
 const myfont = Inter({
   subsets: ["latin"],
@@ -24,12 +27,15 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className={myfont.className}>
+
         <span className="fixed top-0 left-0 right-0 z-50">
           <UpperBanner />
           <Navbar />
         </span>
         <div className="mt-24">
-          {children}
+          <Provider store={store}>
+            {children}
+          </Provider>
         </div>
         <Footer />
       </body>
