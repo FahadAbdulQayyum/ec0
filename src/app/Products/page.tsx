@@ -450,7 +450,7 @@ const Products = () => {
                                 />
                             </div>
                             <div className="mt-4">
-                                <p className="text-sm text-gray-500">{product.status}</p>
+                                <p className="text-sm text-quartiary font-bold">{product.status}</p>
                                 <p className="font-bold text-lg">{product.title}</p>
                                 <p className="text-sm text-gray-400">{product.category}</p>
                                 <p className="text-sm text-gray-400">{product.color}</p>
