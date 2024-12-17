@@ -1,45 +1,160 @@
+// src/store/productSlice.ts
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 
-type ProductType = {
+interface Product {
     id: string;
-    status: string;
-    color: string;
-    desc: string;
-    category: string;
-    image: string;
-    title: string;
-    price: string;
+    name: string;
+    price: number;
+    quantity: number;
 }
 
-// Define the initial state for the product slice
-const initialState: { products: ProductType[] } = {
+export interface ProductState {
+    products: Product[];
+}
+
+const initialState: ProductState = {
     products: [],
 };
 
-// Example slice
-const productSlice = createSlice({
+export const productSlice = createSlice({
     name: 'product',
     initialState,
     reducers: {
-        // Add a product to the array
-        addProduct: (state, action: PayloadAction<ProductType>) => {
+        addProduct: (state, action: PayloadAction<Product>) => {
             state.products.push(action.payload);
         },
-
-        // Remove a product by ID
         removeProduct: (state, action: PayloadAction<string>) => {
-            state.products = state.products.filter((product) => product.id !== action.payload);
-        },
-
-        // Update a product by ID
-        updateProduct: (state, action: PayloadAction<ProductType>) => {
-            const index = state.products.findIndex((product) => product.id === action.payload.id);
-            if (index !== -1) {
-                state.products[index] = action.payload;
-            }
+            state.products = state.products.filter(
+                (product) => product.id !== action.payload
+            );
         },
     },
 });
 
-export const { addProduct, removeProduct, updateProduct } = productSlice.actions;
-export default productSlice.reducer;
+export const { addProduct, removeProduct } = productSlice.actions;
+export default productSlice.reducer;  // Make sure you're exporting the reducer
+
+
+
+
+
+// // src/store/productSlice.ts
+// import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
+// interface Product {
+//     id: string;
+//     name: string;
+//     price: number;
+//     quantity: number;
+// }
+
+// export interface ProductState {
+//     products: Product[];
+// }
+
+// const initialState: ProductState = {
+//     products: [],
+// };
+
+// export const productSlice = createSlice({
+//     name: 'product',
+//     initialState,
+//     reducers: {
+//         addProduct: (state, action: PayloadAction<Product>) => {
+//             state.products.push(action.payload);
+//         },
+//         removeProduct: (state, action: PayloadAction<string>) => {
+//             state.products = state.products.filter(
+//                 (product) => product.id !== action.payload
+//             );
+//         },
+//     },
+// });
+
+// export const { addProduct, removeProduct } = productSlice.actions;
+// export default productSlice.reducer;  // Ensure this is exporting the reducer
+
+
+
+
+
+
+
+// // // src/store/productSlice.ts
+// // import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
+// // interface Product {
+// //     id: string;
+// //     name: string;
+// //     price: number;
+// //     quantity: number;
+// // }
+
+// // export interface ProductState {
+// //     products: Product[];
+// // }
+
+// // const initialState: ProductState = {
+// //     products: [],
+// // };
+
+// // export const productSlice = createSlice({
+// //     name: 'product',
+// //     initialState,
+// //     reducers: {
+// //         addProduct: (state, action: PayloadAction<Product>) => {
+// //             state.products.push(action.payload);
+// //         },
+// //         removeProduct: (state, action: PayloadAction<string>) => {
+// //             state.products = state.products.filter(
+// //                 (product) => product.id !== action.payload
+// //             );
+// //         },
+// //     },
+// // });
+
+// // export const { addProduct, removeProduct } = productSlice.actions;
+// // export default productSlice.reducer;
+
+
+
+
+
+
+
+
+// // // import { createSlice, PayloadAction } from '@reduxjs/toolkit';
+
+// // // interface Product {
+// // //     id: string;
+// // //     name: string;
+// // //     price: number;
+// // //     quantity: number;
+// // //     imageUrl: string;
+// // // }
+
+// // // interface ProductState {
+// // //     products: Product[];
+// // // }
+
+// // // const initialState: ProductState = {
+// // //     products: [],
+// // // };
+
+// // // export const productSlice = createSlice({
+// // //     name: 'product',
+// // //     initialState,
+// // //     reducers: {
+// // //         addProduct: (state, action: PayloadAction<Product>) => {
+// // //             state.products.push(action.payload);
+// // //         },
+// // //         removeProduct: (state, action: PayloadAction<string>) => {
+// // //             state.products = state.products.filter(
+// // //                 (product) => product.id !== action.payload
+// // //             );
+// // //         },
+// // //     },
+// // // });
+
+// // // export const { addProduct, removeProduct } = productSlice.actions;
+// // // export default productSlice.reducer;
