@@ -1,41 +1,54 @@
 import { configureStore } from '@reduxjs/toolkit';
 import productReducer from './productSlice';
+import { loadState, saveState } from './localStorage';
+
+// Load persisted state from localStorage
+const persistedState = loadState();
 
 export const store = configureStore({
     reducer: {
-        product: productReducer,
+        product: productReducer, // Reducer for the product slice
     },
+    preloadedState: persistedState, // Use persisted state if available
 });
 
 export type RootState = ReturnType<typeof store.getState>;
 export type AppDispatch = typeof store.dispatch;
 
+// Save state to localStorage whenever it changes
+store.subscribe(() => {
+    saveState({
+        product: store.getState().product, // Save only the product slice
+    });
+});
 
 
 
 
 
-// // src/store/store.ts
+
+
+
+
 // import { configureStore } from '@reduxjs/toolkit';
-// import productReducer from './productSlice';  // Import the reducer correctly
+// import productReducer from './productSlice';
 // import { loadState, saveState } from './localStorage';
 
-// const persistedState = loadState();  // Load persisted state from localStorage
+// const persistedState = loadState();
 
-// // Configure the Redux store
 // export const store = configureStore({
 //     reducer: {
-//         product: productReducer,  // Ensure that `product` is mapped correctly
+//         product: productReducer,
 //     },
-//     preloadedState: persistedState,  // Set the preloaded state
+//     preloadedState: persistedState, // Load state from localStorage
 // });
 
-// // Persist the state to localStorage on each change
+// export type RootState = ReturnType<typeof store.getState>;
+// export type AppDispatch = typeof store.dispatch;
+
+// // Save the state to localStorage whenever it changes
 // store.subscribe(() => {
 //     saveState({
-//         product: store.getState().product,  // Save only the `product` slice of the state
+//         product: store.getState().product, // Save only the product slice
 //     });
 // });
-
-// export type RootState = ReturnType<typeof store.getState>;  // Infer RootState from the store
-// export type AppDispatch = typeof store.dispatch;  // Infer AppDispatch from the store
