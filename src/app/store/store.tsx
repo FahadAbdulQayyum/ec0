@@ -1,28 +1,14 @@
-// src/store/store.ts
 import { configureStore } from '@reduxjs/toolkit';
-import productReducer from './productSlice';  // Import the reducer correctly
-import { loadState, saveState } from './localStorage';
+import productReducer from './productSlice';
 
-const persistedState = loadState();  // Load persisted state from localStorage
-
-// Configure the Redux store
 export const store = configureStore({
     reducer: {
-        product: productReducer,  // Ensure that `product` is mapped correctly
+        product: productReducer,
     },
-    preloadedState: persistedState,  // Set the preloaded state
 });
 
-// Persist the state to localStorage on each change
-store.subscribe(() => {
-    saveState({
-        product: store.getState().product,  // Save only the `product` slice of the state
-    });
-});
-
-export type RootState = ReturnType<typeof store.getState>;  // Infer RootState from the store
-export type AppDispatch = typeof store.dispatch;  // Infer AppDispatch from the store
-
+export type RootState = ReturnType<typeof store.getState>;
+export type AppDispatch = typeof store.dispatch;
 
 
 
@@ -31,104 +17,25 @@ export type AppDispatch = typeof store.dispatch;  // Infer AppDispatch from the 
 
 // // src/store/store.ts
 // import { configureStore } from '@reduxjs/toolkit';
-// import productReducer from './productSlice';
+// import productReducer from './productSlice';  // Import the reducer correctly
 // import { loadState, saveState } from './localStorage';
 
-// // Load the persisted state from localStorage
-// const persistedState = loadState();
+// const persistedState = loadState();  // Load persisted state from localStorage
 
-// // Store setup
+// // Configure the Redux store
 // export const store = configureStore({
 //     reducer: {
-//         product: productReducer,  // Ensure this matches with your state structure
+//         product: productReducer,  // Ensure that `product` is mapped correctly
 //     },
-//     preloadedState: persistedState, // Preload the persisted state correctly
+//     preloadedState: persistedState,  // Set the preloaded state
 // });
 
-// // Subscribe to changes in the store and save to localStorage
+// // Persist the state to localStorage on each change
 // store.subscribe(() => {
 //     saveState({
-//         product: store.getState().product,  // Save only the `product` state
+//         product: store.getState().product,  // Save only the `product` slice of the state
 //     });
 // });
 
-// export type RootState = ReturnType<typeof store.getState>;
-// export type AppDispatch = typeof store.dispatch;
-
-
-
-
-
-
-
-// // // src/store/store.ts
-// // import { configureStore } from '@reduxjs/toolkit';
-// // import productReducer from './productSlice';
-// // import { loadState, saveState } from './localStorage';
-
-// // // Load state from localStorage
-// // const persistedState = loadState();
-
-// // export const store = configureStore({
-// //     reducer: {
-// //         product: productReducer,  // Reducer stays as is
-// //     },
-// //     preloadedState: persistedState,  // Pass the persisted state here
-// // });
-
-// // // Subscribe to state changes and save to localStorage
-// // store.subscribe(() => {
-// //     saveState({
-// //         product: store.getState().product,  // Save product state only
-// //     });
-// // });
-
-// // export type RootState = ReturnType<typeof store.getState>;
-// // export type AppDispatch = typeof store.dispatch;
-
-
-
-
-
-
-
-// // // import { configureStore } from '@reduxjs/toolkit';
-// // // import productReducer from './productSlice';
-// // // import { loadState, saveState } from './localStorage';
-
-// // // // Load state from localStorage
-// // // const preloadedState = loadState();
-
-// // // export const store = configureStore({
-// // //     reducer: {
-// // //         product: productReducer, // Add product slice
-// // //     },
-// // //     preloadedState, // Use preloaded state
-// // // });
-
-// // // // Subscribe to state changes and save to localStorage
-// // // store.subscribe(() => {
-// // //     saveState({
-// // //         product: store.getState().product, // Save only the product slice
-// // //     });
-// // // });
-
-// // // export type RootState = ReturnType<typeof store.getState>;
-// // // export type AppDispatch = typeof store.dispatch;
-
-
-
-
-
-// // // // import { configureStore } from '@reduxjs/toolkit';
-// // // // import productReducer from './productSlice';
-
-// // // // export const store = configureStore({
-// // // //     reducer: {
-// // // //         product: productReducer, // Ensure "product" matches the slice name
-// // // //     },
-// // // // });
-
-// // // // // Explicitly define RootState and AppDispatch
-// // // // export type RootState = ReturnType<typeof store.getState>;
-// // // // export type AppDispatch = typeof store.dispatch;
+// export type RootState = ReturnType<typeof store.getState>;  // Infer RootState from the store
+// export type AppDispatch = typeof store.dispatch;  // Infer AppDispatch from the store
