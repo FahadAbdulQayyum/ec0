@@ -33,6 +33,9 @@ This project includes the following pages:
   - **Sign Up Page** (`/signup`): A form for new users to create an account. Users access this page by clicking "Join Us."
   - **Sign In Page** (`/signin`): A form for existing users to log in to their account. Users access this page by clicking "Login."
 
+## You Can Find This Live on Vercel
+- [Nike Ecommerce Hackathon](https://ec0.vercel.app) - Nike Ecommerce Hackathon Link.
+
 ## Learn More
 
 To learn more about Next.js, take a look at the following resources:
